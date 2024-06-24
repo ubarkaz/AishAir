@@ -268,13 +268,13 @@ nav{
 }
 
 .plan_image img:nth-child(2){
-    max-width: 260px; /*300px*/
+    max-width: 250px; /*300px*/
     transform: translate(-50%, calc(-50% - 5rem));
     z-index: 2;
 }
 
 .plan_image img:nth-child(3){
-    max-width: 230px; /*300px*/
+    max-width: 240px; /*300px*/
     transform: translate(calc(-50% + 9rem), calc(-50% + 5rem));
 }
 
@@ -378,12 +378,12 @@ nav{
 }
 
 .lounge_image img:nth-child(1){
-    max-width: 300px;
+    max-width: 400px;
     transform: translate(calc(-50% - 3rem), -50%);
 }
 
 .lounge_image img:nth-child(2){
-    max-width: 300px;
+    max-width: 350px;
     transform: translate(calc(-50% + 6rem), calc(-50% + 7rem));
 }
 
@@ -409,17 +409,31 @@ nav{
     border-radius: 5rem;
     overflow: hidden;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    height: 350px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.travellers_card img{
+    width: 100%;
+    height: 65%; 
+    object-fit: cover ; 
 }
 
 .travellers_card_content{
     position: relative;
     padding: 1rem;
     text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .travellers_card_content img{
     position: absolute;
-    max-width: 70px;
+    max-width: 80px;
+    max-height: 80px;
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -428,7 +442,7 @@ nav{
 }
 
 .travellers_card_content h4{
-    margin-top: 1.5rem;
+    margin-top: 2rem; /* Adjusted to ensure space for the profile image */
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-dark);
@@ -438,6 +452,7 @@ nav{
     font-weight: 500;
     color: var(--text-light);
 }
+
 
 .subscribe{
     background-color: var(--extra-light);
